@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .img-perfil {
+          width: 30%;
+          height: auto;
+          margin-top: 40%;
+          margin-bottom: 10%;
+        }
+
+        .imageLogOut {
+            width: 15%;
+            height: auto;
+        }
+
+        .buttonLogOut {
+            margin-bottom: 30%;
+        }
+
+        .usuario {
+            background-color: #E6D45D;
+        }
+         
+        .mainBtn {
+            background-color: #E6D45D;
+            color: black;
+        }
+
+        .btnTask {
+            background-color: darkgray;
+        }
+
+        .task {
+            background-color: lightgray;
+            width: 50%;
+        }
+
+        .img-task {
+            width: 5%;
+        }
+    </style>
+    <title>Usuario - Inicio</title>
+</head>
+<body>
+    <nav class="navbar bg-dark shadow mb-3">
+        <form class="container-fluid justify-content-center text-white">
+          <button class="mainBtn btn btn-outline-light me-2 active" type="button">Información general</button>
+          <button class="mainBtn btn btn-outline-light me-2" type="button">Historial de evaluaciones</button>
+        </form>
+    </nav>
+    <div class="d-flex justify-content-around w-75 shadow mx-auto">
+        <div class="usuario w-25 text-center rounded">
+            <p class="fs-4">Bienvenido</p>
+            <img class="img-perfil" src="./images/perfil.png">
+            <div class="infoEmpleado d-flex flex-column align-items-start px-1">
+                <p class="fs-5">Nombre completo</p>
+                <p class="fs-5">Dependencia</p>
+                <p class="fs-5">Cargo</p>
+                <p class="fs-5">Calificación</p>
+            </div>
+            <button class="buttonLogOut btn btn-primary btn-outline-danger text-body rounded-pill w-50 mt-5" type="submit"><img class="imageLogOut" src="./images/logout.png">Salir</button>
+        </div>
+        <div class="w-75 my-auto">
+            <form class="row mx-3">
+                <h2>Datos personales</h2>
+                <div class="col-md-3">
+                    <label for="inputApellidos" class="form-label readonly">Apellidos</label>
+                    <input type="text" class="form-control" id="inputApellidos" disabled readonly>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputNombres" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="inputNombres" disabled readonly>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputTipoDocumento" class="form-label">Tipo de documento</label>
+                    <select id="inputTipoDocumento" class="form-select" disabled readonly>
+                        <option selected>Cedula ciudadania</option>
+                        <option selected>Cedula extranjeria</option>
+                        <option selected>Pasaporte</option>
+                        <option selected>Permiso diplomatico</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                  <label for="inputNumDocumento" class="form-label">Num. documento</label>
+                  <input type="text" class="form-control" id="inputNumDocumento" disabled readonly>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputFechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                    <input type="date" class="form-control" id="inputFechaNacimiento" disabled readonly>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEdad" class="form-label">Edad</label>
+                    <input type="number" class="form-control" id="inputEdad" disabled readonly>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputEstadoCivil" class="form-label">Estado Civil</label>
+                    <select id="inputEstadoCivil" class="form-select" disabled readonly>
+                        <option selected>Soltero</option>
+                        <option selected>Casado</option>
+                        <option selected>Union libre</option>
+                        <option selected>Viudo</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCorreoElectronico" class="form-label">Correo Electronico</label>
+                    <input type="email" class="form-control" id="inputCorreoElectronico" disabled readonly>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputTelefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="inputTelefono" disabled readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputDireccion" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="inputDireccion" disabled readonly>
+                </div>
+                <div class="col-md-3">
+                    <label for="inputBarrio" class="form-label">Barrio</label>
+                    <input type="text" class="form-control" id="inputBarrio" disabled readonly>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputEstrato" class="form-label">Estrato</label>
+                    <select id="inputEstrato" class="form-select" disabled readonly>
+                        <option selected>1</option>
+                        <option selected>2</option>
+                        <option selected>3</option>
+                        <option selected>4</option>
+                        <option selected>5</option>
+                        <option selected>6</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputContactoEmergencia" class="form-label">Contacto de emergencia</label>
+                    <input type="text" class="form-control" id="inputContactoEmergencia" disabled readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputTelefono" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="inputTelefono" disabled readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputParentesco" class="form-label">Parentesco</label>
+                    <input type="text" class="form-control" id="inputParentesco" disabled readonly>
+                </div>
+                <h2 class="mt-3">Informacion laboral</h2>
+                <div class="col-md-4">
+                    <label for="inputDependencia" class="form-label">Dependencia</label>
+                    <input type="text" class="form-control" id="inputDependencia" disabled readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCargo" class="form-label">Cargo</label>
+                    <input type="text" class="form-control" id="inputCargo" disabled readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputTipoContrato" class="form-label">Tipo de contrato</label>
+                    <input type="text" class="form-control" id="inputTipoContrato" disabled readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputSalario" class="form-label">Salario</label>
+                    <input type="text" class="form-control" id="inputSalario" disabled readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputFechaIngreso" class="form-label">Fecha de ingreso</label>
+                    <input type="date" class="form-control" id="inputFechaIngreso" disabled readonly>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputFechaTermino" class="form-label">Fecha termino de contrato</label>
+                    <input type="date" class="form-control" id="inputFechaTermino" disabled readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="inputUltimaEvaluacion" class="form-label">Resumen última evaluación</label>
+                    <textarea class="form-control" id="inputUltimaEvaluacion" rows="5" disabled readonly></textarea>
+                </div>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
