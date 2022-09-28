@@ -31,8 +31,8 @@
   </head>
   <body>
     <h1 class="text-center mt-3">COMPAÑÍA DE LAS CERVECERÍAS UNIDAS</h1>
-    <div class="container d-flex justify-content-around w-75 mt-5">
-      <div class="login-container d-flex flex-column align-items-center flex-wrap">
+    <div class="container d-flex w-75 mt-5">
+      <div class="login-container w-50 d-flex flex-column align-items-center flex-wrap">
         <h2 class="mt-4 text-center mb-3">PORTAL DE EMPLEADOS</h2>
         <img class="img-perfil" src="{{url_for('static', filename='images/perfil.png')}}">
         <form action="/action_page.php">
@@ -48,7 +48,7 @@
             <p class="text-center fw-light"><a class="text-dark" href="#" style="text-decoration: none">¿Olvidó su contraseña?</a></p>
         </form>
       </div>
-      <img class="img-empresarial-container" style="width: 50%;" src="{{url_for('static', filename='images/Imagen_portal_empleado.png')}}">
+      <img class="img-empresarial-container w-50" style="width: 50%;" src="{{url_for('static', filename='images/Imagen_portal_empleado.png')}}">
     </div>
   </body>
 </html>
